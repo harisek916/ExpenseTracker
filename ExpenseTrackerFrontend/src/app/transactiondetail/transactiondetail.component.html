@@ -1,0 +1,15 @@
+
+<div class="container">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          {{transaction.title}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{transaction.type|uppercase}}</li>
+          <li class="list-group-item">{{transaction.category}}</li>
+          <li class="list-group-item">{{transaction.created_date|date}}</li>
+          <li class="list-group-item">{{transaction.amount|currency:'INR'}}</li>
+        </ul>
+      </div>    
+</div>
